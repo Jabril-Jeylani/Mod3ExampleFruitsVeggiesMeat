@@ -8,6 +8,16 @@ const fruitRoutes = require('./routes/fruitRoutes')
 const vegetableRoutes = require('./routes/vegetableRoutes')
 const meatRoutes = require('./routes/meatRoutes')
 
+// Load the create engine function
+const jsxEngine = require('jsx-view-engine')
+
+// Configure the view engine and look for files ending in jsx
+app.set('view engine', 'jsx')
+
+// Create the engine and accept files ending in jsx
+app.engine('jsx', jsxEngine())
+//
+
 // Connect our fruit routes to our express app
 app.use('/fruits', fruitRoutes)
 app.use('/vegetables', vegetableRoutes)
