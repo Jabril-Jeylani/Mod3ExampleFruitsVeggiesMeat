@@ -1,11 +1,19 @@
 import React from "react";
 
-function Show() {
-    return(
-        <div>
-            <h1>Show</h1>
-        </div>
-    )
+function Show(props) {
+	// {fruit: fruits[req.params.indexOfFruit]}
+	return (
+		<div>
+			<h1>Show</h1>
+			<p>Name: {props.fruit.name}</p>
+			<p>Color: {props.fruit.color}</p>
+			<p>
+				{props.fruit.readyToEat
+					? "This fruit is ready to eat"
+					: "This fruit is NOT ready to eat"}
+			</p>
+		</div>
+	);
 }
 
-export default Show
+export default Show;
