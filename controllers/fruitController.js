@@ -3,7 +3,7 @@ const fruits = require('../models/fruits')
 
 // The callback function from the "index" route 
 function index(req, res) {
-    res.send(fruits)
+    res.render('fruits/Index')
 }
 
 function filter(req, res) {
@@ -25,7 +25,7 @@ function filter(req, res) {
 
 // The callback function from the "show" route
 function show(req, res) {
-    res.send(fruits[req.params.indexOfFruit])
+    res.render('fruits/Show')
 }
 
 module.exports = {
