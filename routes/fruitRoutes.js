@@ -10,6 +10,8 @@ const fruitController = require('../controllers/fruitController')
 // "index" route      //   localhost:8080/fruits/
 router.get('/', fruitController.index)
 
+router.get('/filter', fruitController.filter)
+
 // "show" route      //   localhost:8080/fruits/:indexOfFruit
 router.get('/:indexOfFruit', fruitController.show)
 

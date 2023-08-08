@@ -30,7 +30,7 @@ app.listen(PORT, () => {
 // 	res.send(fruits);
 // });
 
-// // example of filter using query
+// example of filter using query
 // app.get("/fruits/filter", (req, res) => {
 //     let name = req.query.name
 // 	let ready = (req.query.readyToEat === 'true')
@@ -41,9 +41,6 @@ app.listen(PORT, () => {
 //         && item.color === color
 //     })
 //     console.log(req.query.readyToEat)
-//     // console.log(req.query.color)
-//     // console.log(filteredFruits)
-// 	// console.log(req.query);
 // 	res.send(filteredFruits);
 // });
 
